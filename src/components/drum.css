@@ -1,0 +1,125 @@
+body {
+    background: url("https://image.yayimages.com/1600/photo/abstract-musical-background-piano-drums-and-trumpet-3760534.jpg");
+      height:100%;
+      width:100%;
+       background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    #drum-machine{
+        display:flex;
+       justify-content:center;  
+     }
+
+    .well {
+      height: 300px;
+      width:600px;
+      position:absolute;
+      top:150px;
+      padding-top: 30px;
+      padding-left:20px;
+     box-shadow: 2px 3px 5px 1px ;
+      background-color: silver;
+      border-radius:5px;
+     } 
+    .row{
+      margin:35px 0 0 30px;
+    }
+    .pad-bank{
+      display: grid;
+        grid-template-columns: repeat(3,minmax(20px,80px));
+        grid-template-rows: 62px 62px;
+        grid-gap: 4px;
+        margin-top: 30px;
+    }
+    .drum-pad{
+      border-bottom:1px solid white;
+       border-right:1px solid white;
+       border-radius:5px ;
+      background-color:red;
+      color:black;
+      width:80px;
+      height:57px;
+      margin-bottom:10px;
+      box-shadow: 1px 2px 2px 1px;
+      font-family:Rockwell,sans-serif;
+      font-weight:500;
+      font-size:20px;
+       cursor: pointer;
+    }
+    .drum-pad:hover{
+      background-color:orange;
+    }
+    .drum-pad:active {
+      background-color:orange;
+       transform: translateY(6px);
+    }
+    
+    #display{
+      width:140px;
+      height:40px;
+      background-color:gold;
+      color:red;
+      position:absolute;
+      top:130px;
+      right:80px;
+      font-family:Rockwell,sans-serif;
+      font-size:15px;
+      font-weight:700;
+      padding:8px 0px 2px 0px;
+      display:flex;
+      justify-content:center;
+    }
+    #pBtn{
+      width:40px;
+      height:20px;
+      position:absolute;
+      top:10px;
+      right:-11px;
+    }
+    #pstyle{
+       font-family:Rockwell,sans-serif;
+      font-size:10px;
+      font-weight:800;
+       position:absolute;
+      top:80px;
+      right:140px;
+      display:inline-block;
+    }
+    #vol{
+     position:absolute;
+      top:190px;
+      right:80px;
+      
+    }
+    #pVol{
+     margin-left:30px;
+       font-family:Rockwell,sans-serif;
+      font-size:15px;
+      font-weight:600;
+    
+    }
+    
+    
+    
+    @media screen and (max-width: 650px) {
+      body{
+        height: 100vh;
+       } 
+    .well {
+      width:420px;
+     } 
+      #display{
+        right:2px;
+       }
+      #pBtn {
+         right:-11px;
+       } 
+      #pstyle{
+      right:60px;   
+      }
+       #vol{
+         right: 10px;
+        } 
+    
+      }
